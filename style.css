@@ -60,10 +60,6 @@ nav {
   margin: 0 auto;
   background-color: #ffffff;
   border-radius: 5px;
-}
-
-.top-player {
-  width: 870px;
   margin: 32px auto;
   padding: 30px;
 }
@@ -93,4 +89,45 @@ h2 {
   font-size: 18px;
   color: #000000;
   margin-left: 16px;
+}
+
+hr{
+  width: 807px;
+  margin: 30px auto;
+  border: 1px solid #D1D1D1;
+}
+
+
+/* blog sectioin start here */
+
+
+.blogs{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-row-gap: 30px;
+  grid-column-gap: 30px;
+}
+.blog{
+  display: flex;
+  align-items: center;
+}
+
+.thumbnail img{
+  width: 177px;
+  height: 117px;
+}
+
+.blog-title{
+  font-size: 20px;
+  margin-left: 16px;
+}
+
+.blog-author{
+  color: #9F9F9F;
+  margin-left: 16px;
+}
+
+.blog-author a{
+  text-decoration: none;
+  color:#562eff;
 }
