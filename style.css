@@ -7,6 +7,7 @@
 
 body {
   background-color: #f3f1ff;
+  position: relative;
 }
 
 /* header section start here */
@@ -63,6 +64,7 @@ nav {
   border-radius: 5px;
   margin: 32px auto;
   padding: 30px;
+  z-index: 1;
 }
 
 .players {
@@ -246,3 +248,127 @@ hr {
     display: none;
   }
 }
+
+/* --------------------------
+            animation
+ ----------------------------*/
+
+ .ball{
+  position: absolute;
+  top: 94px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+ }
+
+ .ball-1{
+  position: absolute;
+  top: 95px;
+  background-color: #ffc014;
+  z-index: -1;
+  animation: ball-1 5s ease 0s infinite alternate;
+ }
+
+ .ball-2{
+  position: absolute;
+  top: 95px;
+  right: 0;
+  background-color: #14e4ff;
+  z-index: -1;
+  animation: ball-2 5s ease 0s infinite alternate;
+ }
+
+ .ball-3{
+  position: absolute;
+  top: 50%;
+  left: 0;
+  background-color: #9961ed;
+  z-index: -1;
+  animation: ball-3 6s ease 0s infinite alternate;
+ }
+ .ball-4{
+  position: absolute;
+  top: 50%;
+  right: 0;
+  background-color: #ed61da;
+  z-index: -1;
+  animation: ball-4 7s ease 0s infinite alternate;
+ }
+
+ @keyframes ball-1 {
+  0%{
+    left: 0;
+    top: 94px;
+  }
+  50%{
+    left: 50%;
+    top: 50%;
+  }
+  100%{
+    left: 90%;
+    top: 90%;
+  }
+ }
+
+ @keyframes ball-2 {
+  0%{
+    right: 0;
+    top: 94px;
+  }
+  50%{
+    right: 50%;
+    top: 50%;
+  }
+  100%{
+    right: 90%;
+    top: 90%;
+  }
+ }
+
+ @keyframes ball-3 {
+  0%{
+    top: 50%;
+    left: 0;
+  }
+  25%{
+    top: 95px;
+    left: 50%;
+  }
+  50%{
+    left: 95%;
+    top: 50%;
+  }
+
+  75%{
+    top: 90%;
+    left: 50%;
+  }
+  100%{
+    top: 50%;
+    left: 0;
+  }
+ }
+
+ @keyframes ball-4 {
+  0%{
+    top: 50%;
+    right: 0;
+  }
+  25%{
+    top: 95px;
+    right: 50%;
+  }
+  50%{
+    top: 50%;
+    right: 95%;
+  }
+
+  75%{
+    top: 90%;
+    right: 50%;
+  }
+  100%{
+    top: 50%;
+    right: 0;
+  }
+ }
