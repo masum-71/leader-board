@@ -55,7 +55,7 @@ nav {
 
 /* main section start here */
 
-.hero {
+.hero , .lates-course{
   width: 870px;
   margin: 0 auto;
   background-color: #ffffff;
@@ -131,3 +131,5 @@ hr{
   text-decoration: none;
   color:#562eff;
 }
+
+/* course section statr here */
