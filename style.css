@@ -133,3 +133,49 @@ hr{
 }
 
 /* course section statr here */
+
+.courses{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 50px;
+}
+.course-banner img{
+  width: 224px;
+  height: 104px;
+}
+
+.coures-name{
+  font-size: 20px;
+}
+
+.coures-author{
+  font-size: 15px;
+  color: #ED6B4F;
+}
+
+.coures-info{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+.star{
+  font-size: 15px;
+}
+
+.star span{
+  color: #A2A2A2;
+}
+
+.fa-star.filled{
+  color: #FFC014;
+}
+
+.fa-star.empty{
+  color: #AEAEAE;
+}
+
+.duration{
+  color: #FF4A60;
+  font-size: 15px;
+}
