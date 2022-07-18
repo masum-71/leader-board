@@ -55,7 +55,8 @@ nav {
 
 /* main section start here */
 
-.hero , .lates-course{
+.hero,
+.lates-course {
   width: 870px;
   margin: 0 auto;
   background-color: #ffffff;
@@ -132,48 +133,116 @@ hr {
 
 /* course section statr here */
 
-.courses{
+.courses {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-column-gap: 50px;
+  grid-row-gap: 30px;
 }
-.course-banner img{
+.course-banner img {
   width: 224px;
   height: 104px;
+  margin-bottom: 16px;
 }
 
-.coures-name{
+.coures-name {
   font-size: 20px;
 }
 
-.coures-author{
+.coures-author {
   font-size: 15px;
-  color: #ED6B4F;
+  color: #ed6b4f;
 }
 
-.coures-info{
+.coures-info {
   display: flex;
   justify-content: space-between;
   margin-top: 15px;
 }
 
-.star{
+.star {
   font-size: 15px;
 }
 
-.star span{
-  color: #A2A2A2;
+.star span {
+  color: #a2a2a2;
 }
 
-.fa-star.filled{
-  color: #FFC014;
+.fa-star.filled {
+  color: #ffc014;
 }
 
-.fa-star.empty{
-  color: #AEAEAE;
+.fa-star.empty {
+  color: #aeaeae;
 }
 
-.duration{
-  color: #FF4A60;
+.duration {
+  color: #ff4a60;
   font-size: 15px;
+}
+
+/* Responsive layout */
+
+@media screen and (max-width: 576px) {
+  header {
+    display: none;
+  }
+  .players,
+  .blogs,
+  .courses {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .hero,
+  .lates-course {
+    width: 100%;
+  }
+
+  hr {
+    width: 100%;
+  }
+  .top-player,
+  .top-blogs,
+  .lates-course {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 768px) and (min-width: 577px) {
+  header {
+    display: none;
+  }
+  .players {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .blogs,
+  .courses {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .hero,
+  .lates-course {
+    width: 100%;
+  }
+
+  hr {
+    width: 100%;
+  }
+  .top-player,
+  .top-blogs,
+  .lates-course {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 815px) {
+  header {
+    display: none;
+  }
 }
