@@ -91,43 +91,41 @@ h2 {
   margin-left: 16px;
 }
 
-hr{
+hr {
   width: 807px;
   margin: 30px auto;
-  border: 1px solid #D1D1D1;
+  border: 1px solid #d1d1d1;
 }
-
 
 /* blog sectioin start here */
 
-
-.blogs{
+.blogs {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-row-gap: 30px;
   grid-column-gap: 30px;
 }
-.blog{
+.blog {
   display: flex;
   align-items: center;
 }
 
-.thumbnail img{
+.thumbnail img {
   width: 177px;
   height: 117px;
 }
 
-.blog-title{
+.blog-title {
   font-size: 20px;
   margin-left: 16px;
 }
 
-.blog-author{
-  color: #9F9F9F;
+.blog-author {
+  color: #9f9f9f;
   margin-left: 16px;
 }
 
-.blog-author a{
+.blog-author a {
   text-decoration: none;
-  color:#562eff;
+  color: #562eff;
 }
